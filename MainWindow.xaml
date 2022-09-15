@@ -1,0 +1,17 @@
+﻿<Window x:Class="_14DB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_14DB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280">
+    <Grid Background="#FF333333">
+        <Image x:Name="characterPortrait" Height="80" Margin="1185,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="81" Source="/portrait.png"/>
+        <TextBlock x:Name="characterName" HorizontalAlignment="Left" Margin="1053,10,0,0" TextWrapping="Wrap" Text="character name" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="charImportBtn" Content="Import" HorizontalAlignment="Left" Margin="1068,39,0,0" VerticalAlignment="Top" FontSize="16" BorderBrush="#00000000" Width="107" Background="#FF30A432" Click="charImportBtn_Click"/>
+        <TextBox x:Name="infoBox" HorizontalAlignment="Center" Margin="0,676,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="1260" Height="18" TextChanged="TextBox_TextChanged" FontSize="14"/>
+        <TextBox x:Name="importIdBox" HorizontalAlignment="Left" Margin="943,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" Height="26" Background="#FF303030"/>
+
+    </Grid>
+</Window>

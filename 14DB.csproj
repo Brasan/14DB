@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>_14DB</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="definitions\achievement.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="FL7ZFt5XMAI6YXJ.png" />
+    <None Remove="portrait.jpg" />
+    <None Remove="portrait.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="api_result\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="definitions\achievement.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="FL7ZFt5XMAI6YXJ.png" />
+    <Resource Include="portrait.jpg" />
+    <Resource Include="portrait.png" />
+  </ItemGroup>
+
+</Project>
